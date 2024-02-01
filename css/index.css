@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:cambria;
+}
+body{
+    background-image: url(../img/fondoProvisional.jpg);
+}
+header {
+    background-color:rgba(17, 141, 218, 0.268);
+    height:100px;
+}
+header img{
+   display: inline-block;
+}
+header h1{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    color: darkslategrey;
+    font-size: xx-large;
+    font-family: fantasy;
+}
+header h1 span{
+    text-align: center;
+    font-family: fantasy;
+}
+nav{
+    display: inline-block;
+    padding-top: 30px;
+    padding-left: 23px;
+}
+nav li a:hover{
+    background-color: aqua;
+    font-family: "Palatino Linotype";
+}
+span{
+    display: block;
+}
+section img{
+   margin-left: 150px;
+
+ }
+ nav li{
+    list-style: none;
+    font-size:x-large;
+}
+main{
+    float: right;
+    width: 88%;
+    position: relative;
+    top: 27px;
+}
+section{
+    float: left;
+    width: 78%;
+   height: auto;
+   font-size: large
+}
+nav a{
+   font-weight: bold;
+}
+main aside p a{
+    display: inline-block;
+}
+
+aside h2{
+    padding-top: 15px;
+}
+aside ul{
+    padding: 35px;
+}
+aside p{
+   text-align: right;
+}
+aside p img{
+    background-color: aqua;
+    padding-right: 7px;
+    padding-bottom: 4px;
+ }
+footer{
+display: inline-block;
+  width: 100%;
+  margin-top: 33.2%;
+  background-color: lightslategrey;
+}
+footer p {
+    text-align: center;
+}
