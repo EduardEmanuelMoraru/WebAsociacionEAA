@@ -29,6 +29,7 @@ nav{
     left:1098px;
     bottom: 58px;
 }
+
 #botoneraRegistro{
     display: grid;
     grid-template-columns: repeat(2,50px);
@@ -37,6 +38,7 @@ nav{
     left:712px;
     bottom: 30px; 
 }
+
 nav li:hover{
     background-color:whitesmoke;
 }
