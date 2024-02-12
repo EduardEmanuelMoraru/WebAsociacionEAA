@@ -1,1406 +1,1476 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokemon</title>
-</head>
-<body>
-    <header>
-
-    </header>
+  </head>
+  <body>
+    <header></header>
     <main>
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        nº Pokedex
-                    </th>
-                    <th>
-                        Sprite
-                    </th>
-                    <th>
-                        Nombre
-                    </th>
-                    <th>
-                        Tipo/s
-                    </th>
-                    <th>
-                        Generación
-                    </th>
-                    <th>
-                        Evoluciona de
-                    </th>
-                    <th>
-                        Evoluciona a
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>001</td>
-                    <td><!-- Imagen de Bulbasaur --></td>
-                    <td>Bulbasaur</td>
-                    <td>Planta, Veneno</td>
-                    <td>1ª</td>
-                    <td>-</td>
-                    <td>Ivysaur</td>
-                </tr>
-                <tr>
-                    <td>002</td>
-                    <td><!-- Imagen de Ivysaur --></td>
-                    <td>Ivysaur</td>
-                    <td>Planta, Veneno</td>
-                    <td>1ª</td>
-                    <td>Bulbasaur</td>
-                    <td>Venusaur</td>
-                </tr>
-                <tr>
-                    <td>003</td>
-                    <td><!-- Imagen de Venusaur --></td>
-                    <td>Venusaur</td>
-                    <td>Planta, Veneno</td>
-                    <td>1ª</td>
-                    <td>Ivysaur</td>
-                    <td><!-- Pokemon que evoluciona después de Venusaur --></td>
-                </tr>
-                <tr>
-                    <td>004</td>
-                    <td><!-- Imagen de Charmander --></td>
-                    <td>Charmander</td>
-                    <td>Fuego</td>
-                    <td>1ª</td>
-                    <td>-</td>
-                    <td>Charmeleon</td>
-                </tr>
-                <tr>
-                    <td>005</td>
-                    <td><!-- Imagen de Charmeleon --></td>
-                    <td>Charmeleon</td>
-                    <td>Fuego</td>
-                    <td>1ª</td>
-                    <td>Charmander</td>
-                    <td>Charizard</td>
-                </tr>
-                <tr>
-                    <td>006</td>
-                    <td><!-- Imagen de Charizard --></td>
-                    <td>Charizard</td>
-                    <td>Fuego, Volador</td>
-                    <td>1ª</td>
-                    <td>Charmeleon</td>
-                    <td><!-- Pokemon que evoluciona después de Charizard --></td>
-                </tr>
-                <tr>
-                    <td>007</td>
-                    <td><!-- Imagen de Squirtle --></td>
-                    <td>Squirtle</td>
-                    <td>Agua</td>
-                    <td>1ª</td>
-                    <td>-</td>
-                    <td>Wartortle</td>
-                </tr>
-                <tr>
-                    <td>008</td>
-                    <td><!-- Imagen de Wartortle --></td>
-                    <td>Wartortle</td>
-                    <td>Agua</td>
-                    <td>1ª</td>
-                    <td>Squirtle</td>
-                    <td>Blastoise</td>
-                </tr>
-                <tr>
-                    <td>009</td>
-                    <td><!-- Imagen de Blastoise --></td>
-                    <td>Blastoise</td>
-                    <td>Agua</td>
-                    <td>1ª</td>
-                    <td>Wartortle</td>
-                    <td><!-- Pokemon que evoluciona después de Blastoise --></td>
-                </tr>
-                <tr>
-                    <td>010</td>
-                    <td><!-- Imagen de Caterpie --></td>
-                    <td>Caterpie</td>
-                    <td>Bicho</td>
-                    <td>1ª</td>
-                    <td>-</td>
-                    <td>Metapod</td>
-                </tr>
-                <tr>
-                    <td>011</td>
-                    <td><!-- Imagen de Metapod --></td>
-                    <td>Metapod</td>
-                    <td>Bicho</td>
-                    <td>1ª</td>
-                    <td>Caterpie</td>
-                    <td>Butterfree</td>
-                </tr>
-                <tr>
-                    <td>012</td>
-                    <td><!-- Imagen de Butterfree --></td>
-                    <td>Butterfree</td>
-                    <td>Bicho, Volador</td>
-                    <td>1ª</td>
-                    <td>Metapod</td>
-                    <td><!-- Pokemon que evoluciona después de Butterfree --></td>
-                </tr>
-                <tr>
-                    <td>013</td>
-                    <td><!-- Imagen de Weedle --></td>
-                    <td>Weedle</td>
-                    <td>Bicho, Veneno</td>
-                    <td>1ª</td>
-                    <td>-</td>
-                    <td>Kakuna</td>
-                </tr>
-                <tr>
-                    <td>014</td>
-                    <td><!-- Imagen de Kakuna --></td>
-                    <td>Kakuna</td>
-                    <td>Bicho, Veneno</td>
-                    <td>1ª</td>
-                    <td>Weedle</td>
-                    <td>Beedrill</td>
-                </tr>
-                <tr>
-                    <td>015</td>
-                    <td><!-- Imagen de Beedrill --></td>
-                    <td>Beedrill</td>
-                    <td>Bicho, Veneno</td>
-                    <td>1ª</td>
-                    <td>Kakuna</td>
-                    <td><!-- Pokemon que evoluciona después de Beedrill --></td>
-                </tr>
-                <tr>
-                    <td>016</td>
-                    <td><!-- Imagen de Pidgey --></td>
-                    <td>Pidgey</td>
-                    <td>Normal, Volador</td>
-                    <td>1ª</td>
-                    <td>-</td>
-                    <td>Pidgeotto</td>
-                </tr>
-                <tr>
-                    <td>017</td>
-                    <td><!-- Imagen de Pidgeotto --></td>
-                    <td>Pidgeotto</td>
-                    <td>Normal, Volador</td>
-                    <td>1ª</td>
-                    <td>Pidgey</td>
-                    <td>Pidgeot</td>
-                </tr>
-                <tr>
-                    <td>018</td>
-                    <td><!-- Imagen de Pidgeot --></td>
-                    <td>Pidgeot</td>
-                    <td>Normal, Volador</td>
-                    <td>1ª</td>
-                    <td>Pidgeotto</td>
-                    <td><!-- Pokemon que evoluciona después de Pidgeot --></td>
-                </tr>
-                <tr>
-                    <td>019</td>
-                    <td><!-- Imagen de Rattata --></td>
-                    <td>Rattata</td>
-                    <td>Normal</td>
-                    <td>1ª</td>
-                    <td>-</td>
-                    <td>Raticate</td>
-                </tr>
-                <tr>
-                    <td>020</td>
-                    <td><!-- Imagen de Raticate --></td>
-                    <td>Raticate</td>
-                    <td>Normal</td>
-                    <td>1ª</td>
-                    <td>Rattata</td>
-                    <td><!-- Pokemon que evoluciona después de Raticate --></td>
-                </tr>
-                <tr>
-                    <td>021</td>
-                    <td><!-- Imagen de Spearow --></td>
-                    <td>Spearow</td>
-                    <td>Normal, Volador</td>
-                    <td>1ª</td>
-                    <td>-</td>
-                    <td>Fearow</td>
-                </tr>
-                <tr>
-                    <td>022</td>
-                    <td><!-- Imagen de Fearow --></td>
-                    <td>Fearow</td>
-                    <td>Normal, Volador</td>
-                    <td>1ª</td>
-                    <td>Spearow</td>
-                    <td><!-- Pokemon que evoluciona después de Fearow --></td>
-                </tr>
-                <tr>
-                    <td>023</td>
-                    <td><!-- Imagen de Ekans --></td>
-                    <td>Ekans</td>
-                    <td>Veneno</td>
-                    <td>1ª</td>
-                    <td>-</td>
-                    <td>Arbok</td>
-                </tr>
-                <tr>
-                    <td>024</td>
-                    <td><!-- Imagen de Arbok --></td>
-                    <td>Arbok</td>
-                    <td>Veneno</td>
-                    <td>1ª</td>
-                    <td>Ekans</td>
-                    <td><!-- Pokemon que evoluciona después de Arbok --></td>
-                </tr>
-                <tr>
-                    <td>025</td>
-                    <td><!-- Imagen de Pikachu --></td>
-                    <td>Pikachu</td>
-                    <td>Eléctrico</td>
-                    <td>1ª</td>
-                    <td>Pichu (mediante amistad)</td>
-                    <td>Raichu (usando Piedra Trueno)</td>
-                </tr>
-                <tr>
-                    <td>026</td>
-                    <td><!-- Imagen de Raichu --></td>
-                    <td>Raichu</td>
-                    <td>Eléctrico</td>
-                    <td>1ª</td>
-                    <td>Pikachu (usando Piedra Trueno)</td>
-                    <td><!-- Pokemon que evoluciona después de Raichu --></td>
-                </tr>
-                <tr>
-                    <td>027</td>
-                    <td><!-- Imagen de Sandshrew --></td>
-                    <td>Sandshrew</td>
-                    <td>Tierra</td>
-                    <td>1ª</td>
-                    <td>-</td>
-                    <td>Sandslash</td>
-                </tr>
-                <tr>
-                    <td>028</td>
-                    <td><!-- Imagen de Sandslash --></td>
-                    <td>Sandslash</td>
-                    <td>Tierra</td>
-                    <td>1ª</td>
-                    <td>Sandshrew</td>
-                    <td><!-- Pokemon que evoluciona después de Sandslash --></td>
-                </tr>
-                <tr>
-                    <td>029</td>
-                    <td><!-- Imagen de Nidoran♀ --></td>
-                    <td>Nidoran♀</td>
-                    <td>Veneno</td>
-                    <td>1ª</td>
-                    <td>-</td>
-                    <td>Nidorina</td>
-                </tr>
-                <tr>
-                    <td>030</td>
-                    <td><!-- Imagen de Nidorina --></td>
-                    <td>Nidorina</td>
-                    <td>Veneno</td>
-                    <td>1ª</td>
-                    <td>Nidoran♀</td>
-                    <td>Nidoqueen (usando Piedra Lunar)</td>
-                </tr>
-                <tr>
-                    <td>031</td>
-                    <td><!-- Imagen de Nidoqueen --></td>
-                    <td>Nidoqueen</td>
-                    <td>Veneno, Tierra</td>
-                    <td>1ª</td>
-                    <td>Nidorina (usando Piedra Lunar)</td>
-                    <td><!-- Pokemon que evoluciona después de Nidoqueen --></td>
-                </tr>
-                <tr>
-                    <td>032</td>
-                    <td><!-- Imagen de Nidoran♂ --></td>
-                    <td>Nidoran♂</td>
-                    <td>Veneno</td>
-                    <td>1ª</td>
-                    <td>-</td>
-                    <td>Nidorino</td>
-                </tr>
-                <tr>
-                    <td>033</td>
-                    <td><!-- Imagen de Nidorino --></td>
-                    <td>Nidorino</td>
-                    <td>Veneno</td>
-                    <td>1ª</td>
-                    <td>Nidoran♂</td>
-                    <td>Nidoking (usando Piedra Lunar)</td>
-                </tr>
-                <tr>
-                    <td>034</td>
-                    <td><!-- Imagen de Nidoking --></td>
-                    <td>Nidoking</td>
-                    <td>Veneno, Tierra</td>
-                    <td>1ª</td>
-                    <td>Nidorino (usando Piedra Lunar)</td>
-                    <td><!-- Pokemon que evoluciona después de Nidoking --></td>
-                </tr>
-                <tr>
-                    <td>035</td>
-                    <td><!-- Imagen de Clefairy --></td>
-                    <td>Clefairy</td>
-                    <td>Hada</td>
-                    <td>1ª</td>
-                    <td>-</td>
-                    <td>Clefable (usando Piedra Lunar)</td>
-                </tr>
-                <tr>
-                    <td>036</td>
-                    <td><!-- Imagen de Clefable --></td>
-                    <td>Clefable</td>
-                    <td>Hada</td>
-                    <td>1ª</td>
-                    <td>Clefairy (usando Piedra Lunar)</td>
-                    <td><!-- Pokemon que evoluciona después de Clefable --></td>
-                </tr>
-                <tr>
-                    <td>037</td>
-                    <td><!-- Imagen de Vulpix --></td>
-                    <td>Vulpix</td>
-                    <td>Fuego</td>
-                    <td>1ª</td>
-                    <td>-</td>
-                    <td>Ninetales (usando Piedra Fuego)</td>
-                </tr>
-                <tr>
-                    <td>038</td>
-                    <td><!-- Imagen de Ninetales --></td>
-                    <td>Ninetales</td>
-                    <td>Fuego</td>
-                    <td>1ª</td>
-                    <td>Vulpix (usando Piedra Fuego)</td>
-                    <td><!-- Pokemon que evoluciona después de Ninetales --></td>
-                </tr>
-                <tr>
-                    <td>039</td>
-                    <td><!-- Imagen de Jigglypuff --></td>
-                    <td>Jigglypuff</td>
-                    <td>Normal, Hada</td>
-                    <td>1ª</td>
-                    <td>-</td>
-                    <td>Wigglytuff (usando Piedra Lunar)</td>
-                </tr>
-                <tr>
-                    <td>040</td>
-                    <td><!-- Imagen de Wigglytuff --></td>
-                    <td>Wigglytuff</td>
-                    <td>Normal, Hada</td>
-                    <td>1ª</td>
-                    <td>Jigglypuff (usando Piedra Lunar)</td>
-                    <td><!-- Pokemon que evoluciona después de Wigglytuff --></td>
-                </tr>
-                <tr>
-                    <td>041</td>
-                    <td><!-- Imagen de Zubat --></td>
-                    <td>Zubat</td>
-                    <td>Veneno, Volador</td>
-                    <td>1ª</td>
-                    <td>-</td>
-                    <td>Golbat (subiendo de nivel)</td>
-                </tr>
-                <tr>
-                    <td>042</td>
-                    <td><!-- Imagen de Golbat --></td>
-                    <td>Golbat</td>
-                    <td>Veneno, Volador</td>
-                    <td>1ª</td>
-                    <td>Zubat (subiendo de nivel)</td>
-                    <td>Crobat (mediante amistad)</td>
-                </tr>
-                <tr>
-                    <td>043</td>
-                    <td><!-- Imagen de Oddish --></td>
-                    <td>Oddish</td>
-                    <td>Planta, Veneno</td>
-                    <td>1ª</td>
-                    <td>-</td>
-                    <td>Gloom (subiendo de nivel)</td>
-                </tr>
-                <tr>
-                    <td>044</td>
-                    <td><!-- Imagen de Gloom --></td>
-                    <td>Gloom</td>
-                    <td>Planta, Veneno</td>
-                    <td>1ª</td>
-                    <td>Oddish (subiendo de nivel)</td>
-                    <td>Vileplume (usando Piedra Hoja)</td>
-                </tr>
-                <tr>
-                    <td>045</td>
-                    <td><!-- Imagen de Vileplume --></td>
-                    <td>Vileplume</td>
-                    <td>Planta, Veneno</td>
-                    <td>1ª</td>
-                    <td>Gloom (usando Piedra Hoja)</td>
-                    <td><!-- Pokemon que evoluciona después de Vileplume --></td>
-                </tr>
-                <tr>
-                    <td>046</td>
-                    <td><!-- Imagen de Paras --></td>
-                    <td>Paras</td>
-                    <td>Bicho, Planta</td>
-                    <td>1ª</td>
-                    <td>-</td>
-                    <td>Parasect (subiendo de nivel)</td>
-                </tr>
-                <tr>
-                    <td>047</td>
-                    <td><!-- Imagen de Parasect --></td>
-                    <td>Parasect</td>
-                    <td>Bicho, Planta</td>
-                    <td>1ª</td>
-                    <td>Paras (subiendo de nivel)</td>
-                    <td><!-- Pokemon que evoluciona después de Parasect --></td>
-                </tr>
-                <tr>
-                    <td>048</td>
-                    <td><!-- Imagen de Venonat --></td>
-                    <td>Venonat</td>
-                    <td>Bicho, Veneno</td>
-                    <td>1ª</td>
-                    <td>-</td>
-                    <td>Venomoth (subiendo de nivel)</td>
-                </tr>
-                <tr>
-                    <td>049</td>
-                    <td><!-- Imagen de Venomoth --></td>
-                    <td>Venomoth</td>
-                    <td>Bicho, Veneno</td>
-                    <td>1ª</td>
-                    <td>Venonat (subiendo de nivel)</td>
-                    <td><!-- Pokemon que evoluciona después de Venomoth --></td>
-                </tr>
-                <tr>
-                    <td>050</td>
-                    <td><!-- Imagen de Diglett --></td>
-                    <td>Diglett</td>
-                    <td>Tierra</td>
-                    <td>1ª</td>
-                    <td>-</td>
-                    <td>Dugtrio (subiendo de nivel)</td>
-                </tr>
-                <tr>
-                    <td>051</td>
-                    <td><img src="" alt=""></td>
-                    <td>Dugtrio</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>052</td>
-                    <td><img src="" alt=""></td>
-                    <td>Meowth</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>053</td>
-                    <td><img src="" alt=""></td>
-                    <td>Persian</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>054</td>
-                    <td><img src="" alt=""></td>
-                    <td>Psyduck</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>055</td>
-                    <td><img src="" alt=""></td>
-                    <td>Golduck</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>056</td>
-                    <td><img src="" alt=""></td>
-                    <td>Mankey</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>057</td>
-                    <td><img src="" alt=""></td>
-                    <td>Primeape</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>058</td>
-                    <td><img src="" alt=""></td>
-                    <td>Growlithe</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>059</td>
-                    <td><img src="" alt=""></td>
-                    <td>Arcanine</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>060</td>
-                    <td><img src="" alt=""></td>
-                    <td>Poliwag</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>061</td>
-                    <td><img src="" alt=""></td>
-                    <td>Poliwhirl</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>062</td>
-                    <td><img src="" alt=""></td>
-                    <td>Poliwrath</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>063</td>
-                    <td><img src="" alt=""></td>
-                    <td>Abra</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>064</td>
-                    <td><img src="" alt=""></td>
-                    <td>Kadabra</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>065</td>
-                    <td><img src="" alt=""></td>
-                    <td>Alakazam</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>066</td>
-                    <td><img src="" alt=""></td>
-                    <td>Machop</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>067</td>
-                    <td><img src="" alt=""></td>
-                    <td>Machoke</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>068</td>
-                    <td><img src="" alt=""></td>
-                    <td>Machamp</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>069</td>
-                    <td><img src="" alt=""></td>
-                    <td>Bellsprout</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>070</td>
-                    <td><img src="" alt=""></td>
-                    <td>Weepinbell</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>071</td>
-                    <td><img src="" alt=""></td>
-                    <td>Victreebel</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>072</td>
-                    <td><img src="" alt=""></td>
-                    <td>Tentacool</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>073</td>
-                    <td><img src="" alt=""></td>
-                    <td>Tentacruel</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>074</td>
-                    <td><img src="" alt=""></td>
-                    <td>Geodude</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>075</td>
-                    <td><img src="" alt=""></td>
-                    <td>Graveler</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>076</td>
-                    <td><img src="" alt=""></td>
-                    <td>Golem</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>077</td>
-                    <td><img src="" alt=""></td>
-                    <td>Ponyta</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>078</td>
-                    <td><img src="" alt=""></td>
-                    <td>Rapidash</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>079</td>
-                    <td><img src="" alt=""></td>
-                    <td>Slowpoke</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>080</td>
-                    <td><img src="" alt=""></td>
-                    <td>Slowbro</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>081</td>
-                    <td><img src="" alt=""></td>
-                    <td>Magnemite</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>082</td>
-                    <td><img src="" alt=""></td>
-                    <td>Magneton</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>083</td>
-                    <td><img src="" alt=""></td>
-                    <td>Farfetch'd</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>084</td>
-                    <td><img src="" alt=""></td>
-                    <td>Doduo</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>085</td>
-                    <td><img src="" alt=""></td>
-                    <td>Dodrio</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>086</td>
-                    <td><img src="" alt=""></td>
-                    <td>Seel</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>087</td>
-                    <td><img src="" alt=""></td>
-                    <td>Dewgong</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>088</td>
-                    <td><img src="" alt=""></td>
-                    <td>Grimer</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>089</td>
-                    <td><img src="" alt=""></td>
-                    <td>Muk</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>090</td>
-                    <td><img src="" alt=""></td>
-                    <td>Shellder</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>091</td>
-                    <td><img src="" alt=""></td>
-                    <td>Cloyster</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>092</td>
-                    <td><img src="" alt=""></td>
-                    <td>Gastly</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>093</td>
-                    <td><img src="" alt=""></td>
-                    <td>Haunter</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>094</td>
-                    <td><img src="" alt=""></td>
-                    <td>Gengar</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>095</td>
-                    <td><img src="" alt=""></td>
-                    <td>Onix</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>096</td>
-                    <td><img src="" alt=""></td>
-                    <td>Drowzee</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>097</td>
-                    <td><img src="" alt=""></td>
-                    <td>Hypno</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>098</td>
-                    <td><img src="" alt=""></td>
-                    <td>Krabby</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>099</td>
-                    <td><img src="" alt=""></td>
-                    <td>Kingler</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>100</td>
-                    <td><img src="" alt=""></td>
-                    <td>Voltorb</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>101</td>
-                    <td><img src="" alt=""></td>
-                    <td>Electrode</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>102</td>
-                    <td><img src="" alt=""></td>
-                    <td>Exeggcute</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>103</td>
-                    <td><img src="" alt=""></td>
-                    <td>Exeggutor</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>104</td>
-                    <td><img src="" alt=""></td>
-                    <td>Cubone</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>105</td>
-                    <td><img src="" alt=""></td>
-                    <td>Marowak</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>106</td>
-                    <td><img src="" alt=""></td>
-                    <td>Hitmonlee</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>107</td>
-                    <td><img src="" alt=""></td>
-                    <td>Hitmonchan</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>108</td>
-                    <td><img src="" alt=""></td>
-                    <td>Lickitung</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>109</td>
-                    <td><img src="" alt=""></td>
-                    <td>Koffing</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>110</td>
-                    <td><img src="" alt=""></td>
-                    <td>Weezing</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>111</td>
-                    <td><img src="" alt=""></td>
-                    <td>Rhyhorn</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>112</td>
-                    <td><img src="" alt=""></td>
-                    <td>Rhydon</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>113</td>
-                    <td><img src="" alt=""></td>
-                    <td>Chansey</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>114</td>
-                    <td><img src="" alt=""></td>
-                    <td>Tangela</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>115</td>
-                    <td><img src="" alt=""></td>
-                    <td>Kangaskhan</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>116</td>
-                    <td><img src="" alt=""></td>
-                    <td>Horsea</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>117</td>
-                    <td><img src="" alt=""></td>
-                    <td>Seadra</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>118</td>
-                    <td><img src="" alt=""></td>
-                    <td>Goldeen</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>119</td>
-                    <td><img src="" alt=""></td>
-                    <td>Seaking</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>120</td>
-                    <td><img src="" alt=""></td>
-                    <td>Staryu</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>121</td>
-                    <td><img src="" alt=""></td>
-                    <td>Starmie</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>122</td>
-                    <td><img src="" alt=""></td>
-                    <td>Mr. Mime</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>123</td>
-                    <td><img src="" alt=""></td>
-                    <td>Scyther</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>124</td>
-                    <td><img src="" alt=""></td>
-                    <td>Jynx</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>125</td>
-                    <td><img src="" alt=""></td>
-                    <td>Electabuzz</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>126</td>
-                    <td><img src="" alt=""></td>
-                    <td>Magmar</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>127</td>
-                    <td><img src="" alt=""></td>
-                    <td>Pinsir</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>128</td>
-                    <td><img src="" alt=""></td>
-                    <td>Tauros</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>129</td>
-                    <td><img src="" alt=""></td>
-                    <td>Magikarp</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>130</td>
-                    <td><img src="" alt=""></td>
-                    <td>Gyarados</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>131</td>
-                    <td><img src="" alt=""></td>
-                    <td>Lapras</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>132</td>
-                    <td><img src="" alt=""></td>
-                    <td>Ditto</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>133</td>
-                    <td><img src="" alt=""></td>
-                    <td>Eevee</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>134</td>
-                    <td><img src="" alt=""></td>
-                    <td>Vaporeon</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>135</td>
-                    <td><img src="" alt=""></td>
-                    <td>Jolteon</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>136</td>
-                    <td><img src="" alt=""></td>
-                    <td>Flareon</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>137</td>
-                    <td><img src="" alt=""></td>
-                    <td>Porygon</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>138</td>
-                    <td><img src="" alt=""></td>
-                    <td>Omanyte</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>139</td>
-                    <td><img src="" alt=""></td>
-                    <td>Omastar</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>140</td>
-                    <td><img src="" alt=""></td>
-                    <td>Kabuto</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>141</td>
-                    <td><img src="" alt=""></td>
-                    <td>Kabutops</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>142</td>
-                    <td><img src="" alt=""></td>
-                    <td>Aerodactyl</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>143</td>
-                    <td><img src="" alt=""></td>
-                    <td>Snorlax</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>144</td>
-                    <td><img src="" alt=""></td>
-                    <td>Articuno</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>145</td>
-                    <td><img src="" alt=""></td>
-                    <td>Zapdos</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>146</td>
-                    <td><img src="" alt=""></td>
-                    <td>Moltres</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>147</td>
-                    <td><img src="" alt=""></td>
-                    <td>Dratini</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>148</td>
-                    <td><img src="" alt=""></td>
-                    <td>Dragonair</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>149</td>
-                    <td><img src="" alt=""></td>
-                    <td>Dragonite</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>150</td>
-                    <td><img src="" alt=""></td>
-                    <td>Mewtwo</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>151</td>
-                    <td><img src="" alt=""></td>
-                    <td>Mew</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
+      <table>
+        <thead>
+          <tr>
+            <th>nº Pokedex</th>
+            <th>Sprite</th>
+            <th>Nombre</th>
+            <th>Tipo/s</th>
+            <th>Generación</th>
+            <th>Evoluciona de</th>
+            <th>Evoluciona a</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>001</td>
+            <td>
+              <img src="./img/spritePKM/1.png" alt="Imagen de Bulbasaur" />
+            </td>
+            <td>Bulbasaur</td>
+            <td>Planta, Veneno</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Ivysaur</td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td><img src="./img/spritePKM/2.png" alt="Imagen de Ivysaur" /></td>
+            <td>Ivysaur</td>
+            <td>Planta, Veneno</td>
+            <td>1ª</td>
+            <td>Bulbasaur</td>
+            <td>Venusaur</td>
+          </tr>
+          <tr>
+            <td>003</td>
+            <td>
+              <img src="./img/spritePKM/3.png" alt="Imagen de Venusaur" />
+            </td>
+            <td>Venusaur</td>
+            <td>Planta, Veneno</td>
+            <td>1ª</td>
+            <td>Ivysaur</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>004</td>
+            <td>
+              <img src="./img/spritePKM/4.png" alt="Imagen de Charmander" />
+            </td>
+            <td>Charmander</td>
+            <td>Fuego</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Charmeleon</td>
+          </tr>
+          <tr>
+            <td>005</td>
+            <td>
+              <img src="./img/spritePKM/5.png" alt="Imagen de Charmeleon" />
+            </td>
+            <td>Charmeleon</td>
+            <td>Fuego</td>
+            <td>1ª</td>
+            <td>Charmander</td>
+            <td>Charizard</td>
+          </tr>
+          <tr>
+            <td>006</td>
+            <td>
+              <img src="./img/spritePKM/6.png" alt="Imagen de Charizard" />
+            </td>
+            <td>Charizard</td>
+            <td>Fuego, Volador</td>
+            <td>1ª</td>
+            <td>Charmeleon</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>007</td>
+            <td>
+              <img src="./img/spritePKM/7.png" alt="Imagen de Squirtle" />
+            </td>
+            <td>Squirtle</td>
+            <td>Agua</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Wartortle</td>
+          </tr>
+          <tr>
+            <td>008</td>
+            <td>
+              <img src="./img/spritePKM/8.png" alt="Imagen de Wartortle" />
+            </td>
+            <td>Wartortle</td>
+            <td>Agua</td>
+            <td>1ª</td>
+            <td>Squirtle</td>
+            <td>Blastoise</td>
+          </tr>
+          <tr>
+            <td>009</td>
+            <td>
+              <img src="./img/spritePKM/9.png" alt="Imagen de Blastoise" />
+            </td>
+            <td>Blastoise</td>
+            <td>Agua</td>
+            <td>1ª</td>
+            <td>Wartortle</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>010</td>
+            <td>
+              <img src="./img/spritePKM/10.png" alt="Imagen de Caterpie" />
+            </td>
+            <td>Caterpie</td>
+            <td>Bicho</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Metapod</td>
+          </tr>
+          <tr>
+            <td>011</td>
+            <td>
+              <img src="./img/spritePKM/11.png" alt="Imagen de Metapod" />
+            </td>
+            <td>Metapod</td>
+            <td>Bicho</td>
+            <td>1ª</td>
+            <td>Caterpie</td>
+            <td>Butterfree</td>
+          </tr>
+          <tr>
+            <td>012</td>
+            <td>
+              <img src="./img/spritePKM/12.png" alt="Imagen de Butterfree" />
+            </td>
+            <td>Butterfree</td>
+            <td>Bicho, Volador</td>
+            <td>1ª</td>
+            <td>Metapod</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>013</td>
+            <td><img src="./img/spritePKM/13.png" alt="Imagen de Weedle" /></td>
+            <td>Weedle</td>
+            <td>Bicho, Veneno</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Kakuna</td>
+          </tr>
+          <tr>
+            <td>014</td>
+            <td><img src="./img/spritePKM/14.png" alt="Imagen de Kakuna" /></td>
+            <td>Kakuna</td>
+            <td>Bicho, Veneno</td>
+            <td>1ª</td>
+            <td>Weedle</td>
+            <td>Beedrill</td>
+          </tr>
+          <tr>
+            <td>015</td>
+            <td>
+              <img src="./img/spritePKM/15.png" alt="Imagen de Beedrill" />
+            </td>
+            <td>Beedrill</td>
+            <td>Bicho, Veneno</td>
+            <td>1ª</td>
+            <td>Kakuna</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>016</td>
+            <td><img src="./img/spritePKM/16.png" alt="Imagen de Pidgey" /></td>
+            <td>Pidgey</td>
+            <td>Normal, Volador</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Pidgeotto</td>
+          </tr>
+          <tr>
+            <td>017</td>
+            <td>
+              <img src="./img/spritePKM/17.png" alt="Imagen de Pidgeotto" />
+            </td>
+            <td>Pidgeotto</td>
+            <td>Normal, Volador</td>
+            <td>1ª</td>
+            <td>Pidgey</td>
+            <td>Pidgeot</td>
+          </tr>
+          <tr>
+            <td>018</td>
+            <td>
+              <img src="./img/spritePKM/18.png" alt="Imagen de Pidgeot" />
+            </td>
+            <td>Pidgeot</td>
+            <td>Normal, Volador</td>
+            <td>1ª</td>
+            <td>Pidgeotto</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>019</td>
+            <td>
+              <img src="./img/spritePKM/19.png" alt="Imagen de Rattata" />
+            </td>
+            <td>Rattata</td>
+            <td>Normal</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Raticate</td>
+          </tr>
+          <tr>
+            <td>020</td>
+            <td>
+              <img src="./img/spritePKM/20.png" alt="Imagen de Raticate" />
+            </td>
+            <td>Raticate</td>
+            <td>Normal</td>
+            <td>1ª</td>
+            <td>Rattata</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>021</td>
+            <td>
+              <img src="./img/spritePKM/21.png" alt="Imagen de Spearow" />
+            </td>
+            <td>Spearow</td>
+            <td>Normal, Volador</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Fearow</td>
+          </tr>
+          <tr>
+            <td>022</td>
+            <td><img src="./img/spritePKM/22.png" alt="Imagen de Fearow" /></td>
+            <td>Fearow</td>
+            <td>Normal, Volador</td>
+            <td>1ª</td>
+            <td>Spearow</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>023</td>
+            <td><img src="./img/spritePKM/23.png" alt="Imagen de Ekans" /></td>
+            <td>Ekans</td>
+            <td>Veneno</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Arbok</td>
+          </tr>
+          <tr>
+            <td>024</td>
+            <td><img src="./img/spritePKM/24.png" alt="Imagen de Arbok" /></td>
+            <td>Arbok</td>
+            <td>Veneno</td>
+            <td>1ª</td>
+            <td>Ekans</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>025</td>
+            <td>
+              <img src="./img/spritePKM/25.png" alt="Imagen de Pikachu" />
+            </td>
+            <td>Pikachu</td>
+            <td>Eléctrico</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Raichu</td>
+          </tr>
+          <tr>
+            <td>026</td>
+            <td><img src="./img/spritePKM/26.png" alt="Imagen de Raichu" /></td>
+            <td>Raichu</td>
+            <td>Eléctrico</td>
+            <td>1ª</td>
+            <td>Pikachu</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>027</td>
+            <td>
+              <img src="./img/spritePKM/27.png" alt="Imagen de Sandshrew" />
+            </td>
+            <td>Sandshrew</td>
+            <td>Tierra</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Sandslash</td>
+          </tr>
+          <tr>
+            <td>028</td>
+            <td>
+              <img src="./img/spritePKM/28.png" alt="Imagen de Sandslash" />
+            </td>
+            <td>Sandslash</td>
+            <td>Tierra</td>
+            <td>1ª</td>
+            <td>Sandshrew</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>029</td>
+            <td>
+              <img src="./img/spritePKM/29.png" alt="Imagen de Nidoran♀" />
+            </td>
+            <td>Nidoran♀</td>
+            <td>Veneno</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Nidorina</td>
+          </tr>
+          <tr>
+            <td>030</td>
+            <td>
+              <img src="./img/spritePKM/30.png" alt="Imagen de Nidorina" />
+            </td>
+            <td>Nidorina</td>
+            <td>Veneno</td>
+            <td>1ª</td>
+            <td>Nidoran♀</td>
+            <td>Nidoqueen</td>
+          </tr>
+          <tr>
+            <td>031</td>
+            <td>
+              <img src="./img/spritePKM/31.png" alt="Imagen de Nidoqueen" />
+            </td>
+            <td>Nidoqueen</td>
+            <td>Veneno, Tierra</td>
+            <td>1ª</td>
+            <td>Nidorina</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>032</td>
+            <td>
+              <img src="./img/spritePKM/32.png" alt="Imagen de Nidoran♂" />
+            </td>
+            <td>Nidoran♂</td>
+            <td>Veneno</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Nidorino</td>
+          </tr>
+          <tr>
+            <td>033</td>
+            <td>
+              <img src="./img/spritePKM/33.png" alt="Imagen de Nidorino" />
+            </td>
+            <td>Nidorino</td>
+            <td>Veneno</td>
+            <td>1ª</td>
+            <td>Nidoran♂</td>
+            <td>Nidoking</td>
+          </tr>
+          <tr>
+            <td>034</td>
+            <td>
+              <img src="./img/spritePKM/34.png" alt="Imagen de Nidoking" />
+            </td>
+            <td>Nidoking</td>
+            <td>Veneno, Tierra</td>
+            <td>1ª</td>
+            <td>Nidorino</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>035</td>
+            <td>
+              <img src="./img/spritePKM/35.png" alt="Imagen de Clefairy" />
+            </td>
+            <td>Clefairy</td>
+            <td>Hada</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Clefable</td>
+          </tr>
+          <tr>
+            <td>036</td>
+            <td>
+              <img src="./img/spritePKM/36.png" alt="Imagen de Clefable" />
+            </td>
+            <td>Clefable</td>
+            <td>Hada</td>
+            <td>1ª</td>
+            <td>Clefairy</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>037</td>
+            <td><img src="./img/spritePKM/37.png" alt="Imagen de Vulpix" /></td>
+            <td>Vulpix</td>
+            <td>Fuego</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Ninetales</td>
+          </tr>
+          <tr>
+            <td>038</td>
+            <td>
+              <img src="./img/spritePKM/38.png" alt="Imagen de Ninetales" />
+            </td>
+            <td>Ninetales</td>
+            <td>Fuego</td>
+            <td>1ª</td>
+            <td>Vulpix</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>039</td>
+            <td>
+              <img src="./img/spritePKM/39.png" alt="Imagen de Jigglypuff" />
+            </td>
+            <td>Jigglypuff</td>
+            <td>Normal, Hada</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Wigglytuff</td>
+          </tr>
+          <tr>
+            <td>040</td>
+            <td>
+              <img src="./img/spritePKM/40.png" alt="Imagen de Wigglytuff" />
+            </td>
+            <td>Wigglytuff</td>
+            <td>Normal, Hada</td>
+            <td>1ª</td>
+            <td>Jigglypuff</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>041</td>
+            <td><img src="./img/spritePKM/41.png" alt="Imagen de Zubat" /></td>
+            <td>Zubat</td>
+            <td>Veneno, Volador</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Golbat</td>
+          </tr>
+          <tr>
+            <td>042</td>
+            <td><img src="./img/spritePKM/42.png" alt="Imagen de Golbat" /></td>
+            <td>Golbat</td>
+            <td>Veneno, Volador</td>
+            <td>1ª</td>
+            <td>Zubat</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>043</td>
+            <td><img src="./img/spritePKM/43.png" alt="Imagen de Oddish" /></td>
+            <td>Oddish</td>
+            <td>Planta, Veneno</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Gloom</td>
+          </tr>
+          <tr>
+            <td>044</td>
+            <td><img src="./img/spritePKM/44.png" alt="Imagen de Gloom" /></td>
+            <td>Gloom</td>
+            <td>Planta, Veneno</td>
+            <td>1ª</td>
+            <td>Oddish</td>
+            <td>Vileplume</td>
+          </tr>
+          <tr>
+            <td>045</td>
+            <td>
+              <img src="./img/spritePKM/45.png" alt="Imagen de Vileplume" />
+            </td>
+            <td>Vileplume</td>
+            <td>Planta, Veneno</td>
+            <td>1ª</td>
+            <td>Gloom</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>046</td>
+            <td><img src="./img/spritePKM/46.png" alt="Imagen de Paras" /></td>
+            <td>Paras</td>
+            <td>Bicho, Planta</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Parasect</td>
+          </tr>
+          <tr>
+            <td>047</td>
+            <td>
+              <img src="./img/spritePKM/47.png" alt="Imagen de Parasect" />
+            </td>
+            <td>Parasect</td>
+            <td>Bicho, Planta</td>
+            <td>1ª</td>
+            <td>Paras</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>048</td>
+            <td>
+              <img src="./img/spritePKM/48.png" alt="Imagen de Venonat" />
+            </td>
+            <td>Venonat</td>
+            <td>Bicho, Veneno</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Venomoth</td>
+          </tr>
+          <tr>
+            <td>049</td>
+            <td>
+              <img src="./img/spritePKM/49.png" alt="Imagen de Venomoth" />
+            </td>
+            <td>Venomoth</td>
+            <td>Bicho, Veneno</td>
+            <td>1ª</td>
+            <td>Venonat</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>050</td>
+            <td>
+              <img src="./img/spritePKM/50.png" alt="Imagen de Diglett" />
+            </td>
+            <td>Diglett</td>
+            <td>Tierra</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Dugtrio</td>
+          </tr>
+          <tr>
+            <td>051</td>
+            <td>
+              <img src="./img/spritePKM/51.png" alt="Imagen de Dugtrio" />
+            </td>
+            <td>Dugtrio</td>
+            <td>Tierra</td>
+            <td>1ª</td>
+            <td>Diglett</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>052</td>
+            <td><img src="./img/spritePKM/52.png" alt="Imagen de Meowth" /></td>
+            <td>Meowth</td>
+            <td>Normal</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Persian</td>
+          </tr>
+          <tr>
+            <td>053</td>
+            <td>
+              <img src="./img/spritePKM/53.png" alt="Imagen de Persian" />
+            </td>
+            <td>Persian</td>
+            <td>Normal</td>
+            <td>1ª</td>
+            <td>Meowth</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>054</td>
+            <td>
+              <img src="./img/spritePKM/54.png" alt="Imagen de Psyduck" />
+            </td>
+            <td>Psyduck</td>
+            <td>Agua</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Golduck</td>
+          </tr>
+          <tr>
+            <td>055</td>
+            <td>
+              <img src="./img/spritePKM/55.png" alt="Imagen de Golduck" />
+            </td>
+            <td>Golduck</td>
+            <td>Agua</td>
+            <td>1ª</td>
+            <td>Psyduck</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>056</td>
+            <td><img src="./img/spritePKM/56.png" alt="Imagen de Mankey" /></td>
+            <td>Mankey</td>
+            <td>Lucha</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Primeape</td>
+          </tr>
+          <tr>
+            <td>057</td>
+            <td>
+              <img src="./img/spritePKM/57.png" alt="Imagen de Primeape" />
+            </td>
+            <td>Primeape</td>
+            <td>Lucha</td>
+            <td>1ª</td>
+            <td>Mankey</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>058</td>
+            <td>
+              <img src="./img/spritePKM/58.png" alt="Imagen de Growlithe" />
+            </td>
+            <td>Growlithe</td>
+            <td>Fuego</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Arcanine</td>
+          </tr>
+          <tr>
+            <td>059</td>
+            <td>
+              <img src="./img/spritePKM/59.png" alt="Imagen de Arcanine" />
+            </td>
+            <td>Arcanine</td>
+            <td>Fuego</td>
+            <td>1ª</td>
+            <td>Growlithe</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>060</td>
+            <td>
+              <img src="./img/spritePKM/60.png" alt="Imagen de Poliwag" />
+            </td>
+            <td>Poliwag</td>
+            <td>Agua</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Poliwhirl</td>
+          </tr>
+          <tr>
+            <td>061</td>
+            <td><img src="./img/spritePKM/61.png" alt="Imagen de Poliwhirl"></td>
+            <td>Poliwhirl</td>
+            <td>Agua</td>
+            <td>1ª</td>
+            <td>Poliwag</td>
+            <td>Poliwrath</td>
+        </tr>
+        <tr>
+            <td>062</td>
+            <td><img src="./img/spritePKM/62.png" alt="Imagen de Poliwrath"></td>
+            <td>Poliwrath</td>
+            <td>Agua, Lucha</td>
+            <td>1ª</td>
+            <td>Poliwhirl</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>063</td>
+            <td><img src="./img/spritePKM/63.png" alt="Imagen de Abra"></td>
+            <td>Abra</td>
+            <td>Psíquico</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Kadabra</td>
+        </tr>
+        <tr>
+            <td>064</td>
+            <td><img src="./img/spritePKM/64.png" alt="Imagen de Kadabra"></td>
+            <td>Kadabra</td>
+            <td>Psíquico</td>
+            <td>1ª</td>
+            <td>Abra</td>
+            <td>Alakazam</td>
+        </tr>
+        <tr>
+            <td>065</td>
+            <td><img src="./img/spritePKM/65.png" alt="Imagen de Alakazam"></td>
+            <td>Alakazam</td>
+            <td>Psíquico</td>
+            <td>1ª</td>
+            <td>Kadabra</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>066</td>
+            <td><img src="./img/spritePKM/66.png" alt="Imagen de Machop"></td>
+            <td>Machop</td>
+            <td>Lucha</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Machoke</td>
+        </tr>
+        <tr>
+            <td>067</td>
+            <td><img src="./img/spritePKM/67.png" alt="Imagen de Machoke"></td>
+            <td>Machoke</td>
+            <td>Lucha</td>
+            <td>1ª</td>
+            <td>Machop</td>
+            <td>Machamp</td>
+        </tr>
+        <tr>
+            <td>068</td>
+            <td><img src="./img/spritePKM/68.png" alt="Imagen de Machamp"></td>
+            <td>Machamp</td>
+            <td>Lucha</td>
+            <td>1ª</td>
+            <td>Machoke</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>069</td>
+            <td><img src="./img/spritePKM/69.png" alt="Imagen de Bellsprout"></td>
+            <td>Bellsprout</td>
+            <td>Planta, Veneno</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Weepinbell</td>
+        </tr>
+        <tr>
+            <td>070</td>
+            <td><img src="./img/spritePKM/70.png" alt="Imagen de Weepinbell"></td>
+            <td>Weepinbell</td>
+            <td>Planta, Veneno</td>
+            <td>1ª</td>
+            <td>Bellsprout</td>
+            <td>Victreebel</td>
+        </tr>
+        <tr>
+            <td>071</td>
+            <td><img src="./img/spritePKM/71.png" alt="Imagen de Victreebel"></td>
+            <td>Victreebel</td>
+            <td>Planta, Veneno</td>
+            <td>1ª</td>
+            <td>Weepinbell</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>072</td>
+            <td><img src="./img/spritePKM/72.png" alt="Imagen de Tentacool"></td>
+            <td>Tentacool</td>
+            <td>Agua, Veneno</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Tentacruel</td>
+        </tr>
+        <tr>
+            <td>073</td>
+            <td><img src="./img/spritePKM/73.png" alt="Imagen de Tentacruel"></td>
+            <td>Tentacruel</td>
+            <td>Agua, Veneno</td>
+            <td>1ª</td>
+            <td>Tentacool</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>074</td>
+            <td><img src="./img/spritePKM/74.png" alt="Imagen de Geodude"></td>
+            <td>Geodude</td>
+            <td>Roca, Tierra</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Graveler</td>
+        </tr>
+        <tr>
+            <td>075</td>
+            <td><img src="./img/spritePKM/75.png" alt="Imagen de Graveler"></td>
+            <td>Graveler</td>
+            <td>Roca, Tierra</td>
+            <td>1ª</td>
+            <td>Geodude</td>
+            <td>Golem</td>
+        </tr>
+        <tr>
+            <td>076</td>
+            <td><img src="./img/spritePKM/76.png" alt="Imagen de Golem"></td>
+            <td>Golem</td>
+            <td>Roca, Tierra</td>
+            <td>1ª</td>
+            <td>Graveler</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>077</td>
+            <td><img src="./img/spritePKM/77.png" alt="Imagen de Ponyta"></td>
+            <td>Ponyta</td>
+            <td>Fuego</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Rapidash</td>
+        </tr>
+        <tr>
+            <td>078</td>
+            <td><img src="./img/spritePKM/78.png" alt="Imagen de Rapidash"></td>
+            <td>Rapidash</td>
+            <td>Fuego</td>
+            <td>1ª</td>
+            <td>Ponyta</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>079</td>
+            <td><img src="./img/spritePKM/79.png" alt="Imagen de Slowpoke"></td>
+            <td>Slowpoke</td>
+            <td>Agua, Psíquico</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Slowbro</td>
+        </tr>
+        <tr>
+            <td>080</td>
+            <td><img src="./img/spritePKM/80.png" alt="Imagen de Slowbro"></td>
+            <td>Slowbro</td>
+            <td>Agua, Psíquico</td>
+            <td>1ª</td>
+            <td>Slowpoke</td>
+            <td>-</td>
+        </tr>        
+        <tr>
+            <td>081</td>
+            <td><img src="./img/spritePKM/81.png" alt="Imagen de Magnemite"></td>
+            <td>Magnemite</td>
+            <td>Eléctrico, Acero</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Magneton</td>
+        </tr>
+        <tr>
+            <td>082</td>
+            <td><img src="./img/spritePKM/82.png" alt="Imagen de Magneton"></td>
+            <td>Magneton</td>
+            <td>Eléctrico, Acero</td>
+            <td>1ª</td>
+            <td>Magnemite</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>083</td>
+            <td><img src="./img/spritePKM/83.png" alt="Imagen de Farfetch'd"></td>
+            <td>Farfetch'd</td>
+            <td>Normal, Volador</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>084</td>
+            <td><img src="./img/spritePKM/84.png" alt="Imagen de Doduo"></td>
+            <td>Doduo</td>
+            <td>Normal, Volador</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Dodrio</td>
+        </tr>
+        <tr>
+            <td>085</td>
+            <td><img src="./img/spritePKM/85.png" alt="Imagen de Dodrio"></td>
+            <td>Dodrio</td>
+            <td>Normal, Volador</td>
+            <td>1ª</td>
+            <td>Doduo</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>086</td>
+            <td><img src="./img/spritePKM/86.png" alt="Imagen de Seel"></td>
+            <td>Seel</td>
+            <td>Agua</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Dewgong</td>
+        </tr>
+        <tr>
+            <td>087</td>
+            <td><img src="./img/spritePKM/87.png" alt="Imagen de Dewgong"></td>
+            <td>Dewgong</td>
+            <td>Agua, Hielo</td>
+            <td>1ª</td>
+            <td>Seel</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>088</td>
+            <td><img src="./img/spritePKM/88.png" alt="Imagen de Grimer"></td>
+            <td>Grimer</td>
+            <td>Veneno</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Muk</td>
+        </tr>
+        <tr>
+            <td>089</td>
+            <td><img src="./img/spritePKM/89.png" alt="Imagen de Muk"></td>
+            <td>Muk</td>
+            <td>Veneno</td>
+            <td>1ª</td>
+            <td>Grimer</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>090</td>
+            <td><img src="./img/spritePKM/90.png" alt="Imagen de Shellder"></td>
+            <td>Shellder</td>
+            <td>Agua</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Cloyster</td>
+        </tr>        
+        <tr>
+            <td>091</td>
+            <td><img src="./img/spritePKM/91.png" alt="Imagen de Cloyster"></td>
+            <td>Cloyster</td>
+            <td>Agua, Hielo</td>
+            <td>1ª</td>
+            <td>Shellder</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>092</td>
+            <td><img src="./img/spritePKM/92.png" alt="Imagen de Gastly"></td>
+            <td>Gastly</td>
+            <td>Fantasma, Veneno</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Haunter</td>
+        </tr>
+        <tr>
+            <td>093</td>
+            <td><img src="./img/spritePKM/93.png" alt="Imagen de Haunter"></td>
+            <td>Haunter</td>
+            <td>Fantasma, Veneno</td>
+            <td>1ª</td>
+            <td>Gastly</td>
+            <td>Gengar</td>
+        </tr>
+        <tr>
+            <td>094</td>
+            <td><img src="./img/spritePKM/94.png" alt="Imagen de Gengar"></td>
+            <td>Gengar</td>
+            <td>Fantasma, Veneno</td>
+            <td>1ª</td>
+            <td>Haunter</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>095</td>
+            <td><img src="./img/spritePKM/95.png" alt="Imagen de Onix"></td>
+            <td>Onix</td>
+            <td>Roca, Tierra</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>096</td>
+            <td><img src="./img/spritePKM/96.png" alt="Imagen de Drowzee"></td>
+            <td>Drowzee</td>
+            <td>Psíquico</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Hypno</td>
+        </tr>
+        <tr>
+            <td>097</td>
+            <td><img src="./img/spritePKM/97.png" alt="Imagen de Hypno"></td>
+            <td>Hypno</td>
+            <td>Psíquico</td>
+            <td>1ª</td>
+            <td>Drowzee</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>098</td>
+            <td><img src="./img/spritePKM/98.png" alt="Imagen de Krabby"></td>
+            <td>Krabby</td>
+            <td>Agua</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Kingler</td>
+        </tr>
+        <tr>
+            <td>099</td>
+            <td><img src="./img/spritePKM/99.png" alt="Imagen de Kingler"></td>
+            <td>Kingler</td>
+            <td>Agua</td>
+            <td>1ª</td>
+            <td>Krabby</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td><img src="./img/spritePKM/100.png" alt="Imagen de Voltorb"></td>
+            <td>Voltorb</td>
+            <td>Eléctrico</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Electrode</td>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td><img src="./img/spritePKM/101.png" alt="Imagen de Electrode"></td>
+            <td>Electrode</td>
+            <td>Eléctrico</td>
+            <td>1ª</td>
+            <td>Voltorb</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td><img src="./img/spritePKM/102.png" alt="Imagen de Exeggcute"></td>
+            <td>Exeggcute</td>
+            <td>Planta, Psíquico</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Exeggutor</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td><img src="./img/spritePKM/103.png" alt="Imagen de Exeggutor"></td>
+            <td>Exeggutor</td>
+            <td>Planta, Psíquico</td>
+            <td>1ª</td>
+            <td>Exeggcute</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td><img src="./img/spritePKM/104.png" alt="Imagen de Cubone"></td>
+            <td>Cubone</td>
+            <td>Tierra</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Marowak</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td><img src="./img/spritePKM/105.png" alt="Imagen de Marowak"></td>
+            <td>Marowak</td>
+            <td>Tierra</td>
+            <td>1ª</td>
+            <td>Cubone</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>106</td>
+            <td><img src="./img/spritePKM/106.png" alt="Imagen de Hitmonlee"></td>
+            <td>Hitmonlee</td>
+            <td>Lucha</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>107</td>
+            <td><img src="./img/spritePKM/107.png" alt="Imagen de Hitmonchan"></td>
+            <td>Hitmonchan</td>
+            <td>Lucha</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>108</td>
+            <td><img src="./img/spritePKM/108.png" alt="Imagen de Lickitung"></td>
+            <td>Lickitung</td>
+            <td>Normal</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>109</td>
+            <td><img src="./img/spritePKM/109.png" alt="Imagen de Koffing"></td>
+            <td>Koffing</td>
+            <td>Veneno</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Weezing</td>
+        </tr>
+        <tr>
+            <td>110</td>
+            <td><img src="./img/spritePKM/110.png" alt="Imagen de Weezing"></td>
+            <td>Weezing</td>
+            <td>Veneno</td>
+            <td>1ª</td>
+            <td>Koffing</td>
+            <td>-</td>
+        </tr>        
+        <tr>
+            <td>111</td>
+            <td><img src="./img/spritePKM/111.png" alt="Imagen de Rhyhorn"></td>
+            <td>Rhyhorn</td>
+            <td>Tierra, Roca</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Rhydon</td>
+        </tr>
+        <tr>
+            <td>112</td>
+            <td><img src="./img/spritePKM/112.png" alt="Imagen de Rhydon"></td>
+            <td>Rhydon</td>
+            <td>Tierra, Roca</td>
+            <td>1ª</td>
+            <td>Rhyhorn</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>113</td>
+            <td><img src="./img/spritePKM/113.png" alt="Imagen de Chansey"></td>
+            <td>Chansey</td>
+            <td>Normal</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>114</td>
+            <td><img src="./img/spritePKM/114.png" alt="Imagen de Tangela"></td>
+            <td>Tangela</td>
+            <td>Planta</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>115</td>
+            <td><img src="./img/spritePKM/115.png" alt="Imagen de Kangaskhan"></td>
+            <td>Kangaskhan</td>
+            <td>Normal</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>116</td>
+            <td><img src="./img/spritePKM/116.png" alt="Imagen de Horsea"></td>
+            <td>Horsea</td>
+            <td>Agua</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Seadra</td>
+        </tr>
+        <tr>
+            <td>117</td>
+            <td><img src="./img/spritePKM/117.png" alt="Imagen de Seadra"></td>
+            <td>Seadra</td>
+            <td>Agua</td>
+            <td>1ª</td>
+            <td>Horsea</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>118</td>
+            <td><img src="./img/spritePKM/118.png" alt="Imagen de Goldeen"></td>
+            <td>Goldeen</td>
+            <td>Agua</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Seaking</td>
+        </tr>
+        <tr>
+            <td>119</td>
+            <td><img src="./img/spritePKM/119.png" alt="Imagen de Seaking"></td>
+            <td>Seaking</td>
+            <td>Agua</td>
+            <td>1ª</td>
+            <td>Goldeen</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>120</td>
+            <td><img src="./img/spritePKM/120.png" alt="Imagen de Staryu"></td>
+            <td>Staryu</td>
+            <td>Agua</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Starmie</td>
+        </tr>
+        <tr>
+            <td>121</td>
+            <td><img src="./img/spritePKM/121.png" alt="Imagen de Starmie"></td>
+            <td>Starmie</td>
+            <td>Agua, Psíquico</td>
+            <td>1ª</td>
+            <td>Staryu</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>122</td>
+            <td><img src="./img/spritePKM/122.png" alt="Imagen de Mr. Mime"></td>
+            <td>Mr. Mime</td>
+            <td>Psíquico, Hada</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>123</td>
+            <td><img src="./img/spritePKM/123.png" alt="Imagen de Scyther"></td>
+            <td>Scyther</td>
+            <td>Bicho, Volador</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Scizor</td>
+        </tr>
+        <tr>
+            <td>124</td>
+            <td><img src="./img/spritePKM/124.png" alt="Imagen de Jynx"></td>
+            <td>Jynx</td>
+            <td>Hielo, Psíquico</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>125</td>
+            <td><img src="./img/spritePKM/125.png" alt="Imagen de Electabuzz"></td>
+            <td>Electabuzz</td>
+            <td>Eléctrico</td>
+            <td>1ª</td>
+            <td>Elekid</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>126</td>
+            <td><img src="./img/spritePKM/126.png" alt="Imagen de Magmar"></td>
+            <td>Magmar</td>
+            <td>Fuego</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>127</td>
+            <td><img src="./img/spritePKM/127.png" alt="Imagen de Pinsir"></td>
+            <td>Pinsir</td>
+            <td>Bicho</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>128</td>
+            <td><img src="./img/spritePKM/128.png" alt="Imagen de Tauros"></td>
+            <td>Tauros</td>
+            <td>Normal</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>129</td>
+            <td><img src="./img/spritePKM/129.png" alt="Imagen de Magikarp"></td>
+            <td>Magikarp</td>
+            <td>Agua</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Gyarados</td>
+        </tr>
+        <tr>
+            <td>130</td>
+            <td><img src="./img/spritePKM/130.png" alt="Imagen de Gyarados"></td>
+            <td>Gyarados</td>
+            <td>Agua, Volador</td>
+            <td>1ª</td>
+            <td>Magikarp</td>
+            <td>-</td>
+        </tr>        
+        <tr>
+            <td>131</td>
+            <td><img src="./img/spritePKM/131.png" alt="Imagen de Lapras"></td>
+            <td>Lapras</td>
+            <td>Agua, Hielo</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>132</td>
+            <td><img src="./img/spritePKM/132.png" alt="Imagen de Ditto"></td>
+            <td>Ditto</td>
+            <td>Normal</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>133</td>
+            <td><img src="./img/spritePKM/133.png" alt="Imagen de Eevee"></td>
+            <td>Eevee</td>
+            <td>Normal</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Vaporeon</td>
+        </tr>
+        <tr>
+            <td>134</td>
+            <td><img src="./img/spritePKM/134.png" alt="Imagen de Vaporeon"></td>
+            <td>Vaporeon</td>
+            <td>Agua</td>
+            <td>1ª</td>
+            <td>Eevee</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>135</td>
+            <td><img src="./img/spritePKM/135.png" alt="Imagen de Jolteon"></td>
+            <td>Jolteon</td>
+            <td>Eléctrico</td>
+            <td>1ª</td>
+            <td>Eevee</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>136</td>
+            <td><img src="./img/spritePKM/136.png" alt="Imagen de Flareon"></td>
+            <td>Flareon</td>
+            <td>Fuego</td>
+            <td>1ª</td>
+            <td>Eevee</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>137</td>
+            <td><img src="./img/spritePKM/137.png" alt="Imagen de Porygon"></td>
+            <td>Porygon</td>
+            <td>Normal</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>138</td>
+            <td><img src="./img/spritePKM/138.png" alt="Imagen de Omanyte"></td>
+            <td>Omanyte</td>
+            <td>Roca, Agua</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Omastar</td>
+        </tr>
+        <tr>
+            <td>139</td>
+            <td><img src="./img/spritePKM/139.png" alt="Imagen de Omastar"></td>
+            <td>Omastar</td>
+            <td>Roca, Agua</td>
+            <td>1ª</td>
+            <td>Omanyte</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>140</td>
+            <td><img src="./img/spritePKM/140.png" alt="Imagen de Kabuto"></td>
+            <td>Kabuto</td>
+            <td>Roca, Agua</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Kabutops</td>
+        </tr>        
+        <tr>
+            <td>141</td>
+            <td><img src="./img/spritePKM/141.png" alt="Imagen de Kabutops"></td>
+            <td>Kabutops</td>
+            <td>Roca, Agua</td>
+            <td>1ª</td>
+            <td>Kabuto</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>142</td>
+            <td><img src="./img/spritePKM/142.png" alt="Imagen de Aerodactyl"></td>
+            <td>Aerodactyl</td>
+            <td>Roca, Volador</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>143</td>
+            <td><img src="./img/spritePKM/143.png" alt="Imagen de Snorlax"></td>
+            <td>Snorlax</td>
+            <td>Normal</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>144</td>
+            <td><img src="./img/spritePKM/144.png" alt="Imagen de Articuno"></td>
+            <td>Articuno</td>
+            <td>Hielo, Volador</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>145</td>
+            <td><img src="./img/spritePKM/145.png" alt="Imagen de Zapdos"></td>
+            <td>Zapdos</td>
+            <td>Eléctrico, Volador</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>146</td>
+            <td><img src="./img/spritePKM/146.png" alt="Imagen de Moltres"></td>
+            <td>Moltres</td>
+            <td>Fuego, Volador</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>147</td>
+            <td><img src="./img/spritePKM/147.png" alt="Imagen de Dratini"></td>
+            <td>Dratini</td>
+            <td>Dragón</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>Dragonair</td>
+        </tr>
+        <tr>
+            <td>148</td>
+            <td><img src="./img/spritePKM/148.png" alt="Imagen de Dragonair"></td>
+            <td>Dragonair</td>
+            <td>Dragón</td>
+            <td>1ª</td>
+            <td>Dratini</td>
+            <td>Dragonite</td>
+        </tr>
+        <tr>
+            <td>149</td>
+            <td><img src="./img/spritePKM/149.png" alt="Imagen de Dragonite"></td>
+            <td>Dragonite</td>
+            <td>Dragón, Volador</td>
+            <td>1ª</td>
+            <td>Dragonair</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>150</td>
+            <td><img src="./img/spritePKM/150.png" alt="Imagen de Mewtwo"></td>
+            <td>Mewtwo</td>
+            <td>Psíquico</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>151</td>
+            <td><img src="./img/spritePKM/151.png" alt="Imagen de Mew"></td>
+            <td>Mew</td>
+            <td>Psíquico</td>
+            <td>1ª</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>        
+        </tbody>
+      </table>
     </main>
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
