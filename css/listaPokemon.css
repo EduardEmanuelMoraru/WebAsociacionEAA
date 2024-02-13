@@ -110,6 +110,7 @@ footer p a:hover{
 main{
     display: grid;
     grid-template-columns: 20% 60% 20%;
+    margin: 10vh 0vh;
 }
 
 table, thead, tbody, tr, th, td{
