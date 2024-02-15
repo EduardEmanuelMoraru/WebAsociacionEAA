@@ -1,14 +1,16 @@
 *{
     margin: 0px;
     padding: 0px;
+    
 }
 body{
     background-image: url(./img/);
+    
 }
 header {
     display:block;
     background-color:rgba(20, 89, 192, 0.973);
-    width: 100vw;
+    width: 100%;
     height:9vh;
     
 }
@@ -80,7 +82,7 @@ nav ul{
     grid-template-columns: repeat(2,50px);
     gap: 14px;
     position: absolute;
-    left:36vw;
+    left:35vw;
     bottom: 2.4vh; 
     
 }
@@ -89,21 +91,20 @@ nav ul{
 }
 main {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 20% 60% ;
     margin: 5vh 0vh;
+
 }
 
-#pokemon{
+.pokemon{
     grid-column: 2;
 }
 
 footer{
     background-color: lightslategrey;
-    width: 100vw;
+    width: 100% ;
     height: 9vh;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    
 }
 footer p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -139,103 +140,19 @@ footer p a:hover{
     left: 0;
     z-index: 1;
 }
-#creditos p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-}
-#actividades{
-   border-right: 3px  solid darkcyan;
-}
-#interes{
-    border-left: 3px  solid cyan;
-}
-#imgActividades{
-    height: 20vh;
-    width: 80%;
-    margin: auto;
-    margin-top: 3vh;
-    display: grid;
-    grid-template-columns: 250px 250px ;
-    grid-template-rows: 250px 250px ;
-    gap: 25px;
-}
-.bordeImg{
-    border:5px inset rgb(35, 197, 202);
-    box-shadow: 1px 2px 2px 3px #888888;
-}
 
-details{
-    position:relative;
-    top:34vh;
-    right: -1vw;
-}
-summary{
-    text-align: left;
-}
-details summary p{
-    text-align: left;
-    float: left;
-}
-ol li{
-    text-align: left;
-}
-ol li ul{
-    position: relative;
-    left: 2vw;
-}
-ol{
-    list-style-type: upper-roman;
+#login{
+    
     display: inline-block;
-   
-}
-#moverCaja{
-    position: relative;
-    top: 2.5vh;
-}
-#moverSubCaja{
-    position: relative;
-    top: 1.7vh;
-}
-
-#pokemon{
-    grid-column: 2;
-}
-
-#moverSubCaja p{
-    display: inline-block;
-    color: aqua;
-    width: 5vw;
-    text-transform: capitalize;
-    font-style: italic;
-    font-weight: bold;
-    text-align: left;
-    margin-left: 0.88vw;
-}
-h2{
-    color: rgb(92, 82, 82);
-}
-#moverTexto1{
-    position: relative;
-    bottom: 2vh;
-    right: 1vw;
-}
-#moverTexto2{
-    position: relative;
-    top: 15vh;
-    left: 1vw;
-}
-iframe{
-    margin-top: 2vh;
-}
-h3{
-    margin: auto;
-    color: #888888;
-    width: 30vw;
-    border-left: 2px inset black;
-    border-right: 2px inset black;
-}
-p{
-    color: aqua;
+    text-align: center;
+    position: absolute;
+    left: 88.7vw;
+    bottom:77vh;
+    width: 10vw;
+    height:14vh;
+    border: 2px solid black;
+    background-color: slategray;
+    border-radius: 8px;
 }
 
 table,

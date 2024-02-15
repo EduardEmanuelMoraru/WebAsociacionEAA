@@ -1633,6 +1633,21 @@
           </tr>
         </tbody>
       </table>
+      <div id="login">
+        <p>Iniciar Sesión:</p>
+        <form action=" " method="post">
+          <label for="userName">Nombre de usuario:</label><br>
+          <input type="text" name="userName" id="user" placeholder="usuario"><br>
+          <label for="passWord">Contraseña:</label><br>
+          <input type="password" name="passWord" id="password" placeholder="contraseña" maxlength="10"><br><br>
+          <input type="submit" value="Log-in">
+          <br>
+        </form>
+      </div>
+      <script>
+        var div=document.getElementById("login");
+        div.style.visibility="hidden";
+      </script>
     </main>
     <footer>
       <div id="posicionarTexto">
