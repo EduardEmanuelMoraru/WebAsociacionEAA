@@ -4,7 +4,7 @@
     
 }
 body{
-    background-image: url(./img/);
+    background-image: url(../img/Fondo.jpg);
     
 }
 header {
@@ -142,7 +142,6 @@ footer p a:hover{
 }
 
 #login{
-    
     display: inline-block;
     text-align: center;
     position: absolute;
@@ -164,6 +163,19 @@ td {
     border: 1px solid black;
     border-collapse: collapse;
     text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    font-size: small;
+}
+
+th{
+    background-color: white;
+}
+
+#botonSubir{
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    cursor: pointer;
 }
 
 /*Basico*/
