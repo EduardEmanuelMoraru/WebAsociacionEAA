@@ -269,6 +269,7 @@ hr{
 }
 h2{
     color: rgb(92, 82, 82);
+    font-weight: bold;
 }
 #moverTexto1{
     position: relative;
