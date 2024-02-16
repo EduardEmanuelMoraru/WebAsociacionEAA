@@ -18,7 +18,7 @@ header h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: relative;
     left: 2vw;
-    bottom: 3.2vh;
+    bottom: 2.4vh;
 }
 
 header img{
@@ -136,10 +136,10 @@ main {
     border-color: cyan;
     border-radius: 12px;
     position: relative;
-    bottom: 2.5vh;
+    bottom: 2.8vh;
 
     width: 70vw;
-    height: 82.5vh;
+    height: 81.9vh;
     display:grid;
     grid-template-columns: 35vw 35vw;
     grid-template-rows: 84vh;
