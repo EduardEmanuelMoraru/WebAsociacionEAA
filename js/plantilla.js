@@ -1,3 +1,4 @@
+//mostrar Y ocultar el div del login
 function rellenarDatos(){
     var elemento =document.getElementById("login");
     if(elemento.style.visibility=="hidden"){
@@ -7,10 +8,9 @@ function rellenarDatos(){
     }
 }
 
-
 function irInicio() {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
     });
-} //mostrar Y ocultar el div del login
+}

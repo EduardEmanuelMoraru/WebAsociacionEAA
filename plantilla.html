@@ -2,20 +2,19 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta charset="UTF-8">
     <meta name="author" content="Álvaro Almodóvar, Álvaro Fernández, Eduard Moraru">
-    <meta name="description" content="El plantilla de la página web">
-    <meta name="keywords" content="html,css,js,plantilla">
+    <meta name="description" content="El índice principal de la página web">
+    <meta name="keywords" content="html,css,js,índice,principal">
     <link rel="stylesheet" type="text/css" href="./css/plantilla.css"> 
     <link rel="icon" type="image/x-icon" href="./img/pokemonIcono.ico" sizes="32x32">
     <script type="text/javaScript" src="./js/plantilla.js"></script>
-    <title>Plantilla</title>
+    <title>plantilla</title>
 </head>
 <body>
     <header><a href="./index.html"><img src="./img/logo.png" alt="Logo de la página principal de pokemon" height="80px" width="78px"></a><h1>Asociación de Creadores Pokémon</h1></header>
     <nav>
       <ul>
-        <li><a href="./pokemon.html">Pokémon</a></li>
+        <li><a href="./listaPokemon.html">Pokémon</a></li>
         <li><a href="./foro.html">Foro</a></li>
         <li><a href="./contacto.html">Contacto</a></li>
         <li><a href="./quieneSomos.html">Quiénes somos</a></li>
@@ -26,32 +25,31 @@
       </div>
     </nav>
     <main>
-        <section></section>
-    </main>
-    <div id="creditos">
-        <p>Créditos:Logo de pokemon Go</p>
-     </div>
-     
-     <footer>
-       <div id="posicionarTexto">
-         <p>&copy; Propiedad de Álvaro Almodóvar , Eduard Moraru , Álvaro Fernández</p>
-         <p><a href="https://site.educa.madrid.org/ies.villablanca.madrid/" target="_blank">IES Villablanca</p>
-          <p><a href="mailto:alvaro.almodovar1@educa.madrid.org">Contacto</a></p>
-       </div>
-       <div id="botonSubir"><a onclick="irInicio()"><img width="50px" height="50px" src="./img/flechaSubir.png" alt="Flecha para subir al principio de la pagina"></a></div>
-       <div id="login">
+      
+      
+      <div id="login">
         <p>Iniciar Sesión:</p>
         <form action=" " method="post">
           <label for="userName">Nombre de usuario:</label><br>
           <input type="text" name="userName" id="user" placeholder="usuario"><br>
           <label for="passWord">Contraseña:</label><br>
-          <input type="password" name="passWord" id="password" placeholder="contraseña" maxlength="10"><br>
-          <br><input type="submit" value="Log-in">
+          <input type="password" name="passWord" id="password" placeholder="contraseña" maxlength="10"><br><br>
+          <input type="submit" value="Log-in">
           <br>
         </form>
-      </div> 
+      </div>
+      <script>
+        var div=document.getElementById("login");
+        div.style.visibility="hidden";
+      </script>
+    </main>
+    <footer>
+      <div id="posicionarTexto">
+        <p>&copy; Propiedad de Álvaro Almodóvar , Eduard Moraru , Álvaro Fernández</p>
+        <p><a href="https://site.educa.madrid.org/ies.villablanca.madrid/" target="_blank">IES Villablanca</p>
+         <p><a href="mailto:alvaro.almodovar1@educa.madrid.org">Contacto</a></p>
+      </div>
     </footer>
-    
-     
+    <div id="botonSubir"><a onclick="irInicio()"><img width="50px" height="50px" src="./img/flechaSubir.png" alt="Flecha para subir al principio de la pagina"></a></div>
 </body>
 </html>
