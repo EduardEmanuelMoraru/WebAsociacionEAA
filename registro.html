@@ -22,6 +22,61 @@
         <li><a href="./quieneSomos.html">Quiénes somos</a></li>
       </ul>
     </nav>
+    <main>
+      <section>
+        <form action="" method="post">
+          <h2>Formulario Pokemanico</h2><br><br>
+          <fieldset>
+              <legend>Información personal:</legend>
+          <label for="name">Nombre:</label><input type="text" name="name" placeholder="Introduce tu nombre..." id="nombre" required>
+          <br>
+          <label for="surname">Apellidos:</label><input type="text" name="surname" placeholder="Introduce tu apellido..." id="apellido" required>
+          <br>
+          <label for="Alias">Nombre de usuario:</label><input type="text" name="Alias" placeholder="username" id="nombreUsuario" required><br>
+          <label for="contrasenia">Contraseña:</label>
+          <input type="password" name="contrasenia" id="password"  required placeholder="password"> <br>
+          <label for="nie">Nie:</label><input type="text" name="nie" placeholder="Introduce tu nie..." id="documento" required><br>
+          <label for="mail">Correo electrónico</label>
+          <input type="email" name="mail" id="correo" required> <br>
+          <label for="estado">Estado civil:</label>
+          <input type="checkbox" name="estado" id="soltero" checked>soltero
+          <input type="checkbox" name="estado" id="casado">casado
+          <input type="checkbox" name="estado" id="divorciado">divorciado <br>
+          <label for="tel">Teléfono:</label>
+          <input type="tel" name="tel" id="telefono" maxlength="9"><br>
+          <label for="disponibilidad">Disponibilidad</label> 
+          <select name="disponibilidad" id="semana">
+            <option value="lunes">Lúnes</option>
+            <option value="martes">Martes</option>
+            <option value="miercoles">Miércoles</option>
+            <option value="jueves">Jueves</option>
+            <option value="viernes">Viernes</option>
+            <option value="sabado">Sábado</option>
+            <option value="domingo">Domingo</option>
+          </select><br>
+          <label for="motivacion">Motivación:</label> 
+          <select name="motivacion" id="opcMotivacion">
+            <option value="participar">Participar en actividades</option>
+            <option value="preparar">Preparar actividades</option>
+            <option value="acompaniar">Acompañar a un menor</option>
+            <option value="curiosidad">Curiosidad por la asociacion</option>
+            <option value="other" id="otros">Otros</option>
+          </select><br>
+          <label for="comentario">Observaciones:</label><br>
+          <textarea name="comentario" id="comentary" cols="40" rows="10">
+            Pon tus Observaciones...
+          </textarea><br>
+
+          <label for="TyC">Acepta los terminos y condiciones:</label><input type="checkbox" name="TyC" value="true" id="terminos" required>
+          <label for=""></label>
+          <br>
+
+          <input type="submit" value="Enviar" id="envio">
+          <input type="reset" value="Reinicio" id="reset">
+          </fieldset>
+      </form>
+      </section>
+    </main>
     <div id="creditos">
         <p>Créditos:Logo de pokemon Go</p>
      </div>
