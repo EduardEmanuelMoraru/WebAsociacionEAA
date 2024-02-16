@@ -63,8 +63,7 @@ nav ul{
     grid-template-columns: repeat(4,150px);
     gap: 8px;
 }
-#login{
-    
+#login{  
     display: inline-block;
     text-align: center;
     position: relative;
@@ -91,8 +90,9 @@ nav ul{
 }
 main {
     display: grid;
-    grid-template-columns: 20% 60% ;
+    grid-template-columns: 25% 50% 25%;
     margin: 5vh 0vh;
+    
 }
 
 footer{
@@ -148,3 +148,21 @@ footer p a:hover{
     cursor: pointer;
 }
 
+#centrado{
+    grid-column: 2;
+    background-color: white;
+    border-radius: 3px;
+}
+
+#centrado h1,h2,h3{
+    margin: 5px;
+}
+
+#centrado p{
+    margin: 5px;
+}
+
+#centrado li{
+   padding: 3px;
+    width: 100%;
+}
