@@ -18,7 +18,7 @@ header h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: relative;
     left: 2vw;
-    bottom: 3.2vh;
+    bottom: 2.5vh;
 }
 
 header img{
@@ -76,7 +76,7 @@ main {
     position: relative;
     bottom: 2.8vh;
 
-    width: 70vw;
+    width: 35vw;
     height: 81.9vh;
 
 }
@@ -135,10 +135,14 @@ h2{
 }
 fieldset{
     background-color: aquamarine;
-    height: 49vh;
+    height: 45vh;
     
 }
 legend{
     color:blueviolet;
     font-size: larger;
+    background-color: yellow;
+}
+#botonera{
+    text-align: center;
 }

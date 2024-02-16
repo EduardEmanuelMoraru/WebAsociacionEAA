@@ -27,7 +27,7 @@
         <form action="mailto:admin@asociacion.org" method="post">
           <h2>Formulario Pokemanico</h2><br><br>
           <fieldset>
-              <legend>Información personal</legend>
+              <legend>Información personal</legend><br>
           <label for="name">Nombre:</label><input type="text" name="name" placeholder="Introduce tu nombre..." id="nombre" required>
           <br>
           <label for="surname">Apellidos:</label><input type="text" name="surname" placeholder="Introduce tu apellido..." id="apellido" required>
@@ -86,17 +86,18 @@
           <div id="motivo">
           </div>
           <label for="comentario">Observaciones:</label><br>
-          <textarea name="comentario" id="comentary" cols="40" rows="10">
+          <textarea name="comentario" id="comentary" cols="50" rows="10">
             Pon tus Observaciones...
           </textarea><br>
 
           <label for="TyC">Acepta los terminos y condiciones:</label><input type="checkbox" name="TyC" value="true" id="terminos" required>
     
-          <br>
-
+          <br><br>
+          <div id="botonera">
           <input type="submit" value="Enviar" id="envio" onclick="return confirmarDatos();">
        
           <input type="reset" value="Reinicio" id="reset">
+        </div>
           </fieldset>
 
           </script>
