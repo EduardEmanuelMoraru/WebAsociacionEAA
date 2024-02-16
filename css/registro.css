@@ -3,7 +3,7 @@
     padding: 0px;
 }
 body{
-    background-image: url(./img/);
+    background-image: url(../img/Fondo.jpg);
 }
 header {
     display:block;
@@ -76,7 +76,7 @@ main {
     position: relative;
     bottom: 2.8vh;
 
-    width: 35vw;
+    width: 38vw;
     height: 81.9vh;
 
 }
