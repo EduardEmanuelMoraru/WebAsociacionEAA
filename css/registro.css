@@ -136,4 +136,9 @@ h2{
 fieldset{
     background-color: aquamarine;
     height: 49vh;
+    
+}
+legend{
+    color:blueviolet;
+    font-size: larger;
 }

@@ -24,10 +24,10 @@
     </nav>
     <main>
       <section>
-        <form action="" method="post">
+        <form action="mailto:admin@asociacion.org" method="post">
           <h2>Formulario Pokemanico</h2><br><br>
           <fieldset>
-              <legend>Información personal:</legend>
+              <legend>Información personal</legend>
           <label for="name">Nombre:</label><input type="text" name="name" placeholder="Introduce tu nombre..." id="nombre" required>
           <br>
           <label for="surname">Apellidos:</label><input type="text" name="surname" placeholder="Introduce tu apellido..." id="apellido" required>
@@ -39,9 +39,9 @@
           <label for="mail">Correo electrónico</label>
           <input type="email" name="mail" id="correo" required> <br>
           <label for="estado">Estado civil:</label>
-          <input type="checkbox" name="estado" id="soltero" checked>soltero
-          <input type="checkbox" name="estado" id="casado">casado
-          <input type="checkbox" name="estado" id="divorciado">divorciado <br>
+          <input type="radio" name="estado" id="soltero" checked>soltero
+          <input type="radio" name="estado" id="casado">casado
+          <input type="radio" name="estado" id="divorciado">divorciado <br>
           <label for="tel">Teléfono:</label>
           <input type="tel" name="tel" id="telefono" maxlength="9"><br>
           <label for="disponibilidad">Disponibilidad</label> 
@@ -55,25 +55,51 @@
             <option value="domingo">Domingo</option>
           </select><br>
           <label for="motivacion">Motivación:</label> 
-          <select name="motivacion" id="opcMotivacion">
+          <select name="motivacion" id="opcMotivacion" onchange="mostrarDiv()">
             <option value="participar">Participar en actividades</option>
             <option value="preparar">Preparar actividades</option>
             <option value="acompaniar">Acompañar a un menor</option>
             <option value="curiosidad">Curiosidad por la asociacion</option>
-            <option value="other" id="otros">Otros</option>
+            <option value="other">Otros</option>
+            <script>
+              function mostrarDiv(){
+                var opc=document.getElementById("opcMotivacion").value;
+                var tes=null;
+                var div=null;
+                if(opc=="other")
+                  {
+                     div=document.getElementById("motivo");
+                     tes=document.createElement("textarea");
+                     tes.setAttribute("placeholder","Escribe otro motivo....");
+                     tes.setAttribute("id","divM");
+                    if(div.childNodes.length<2){
+                      div.append(tes);
+                    } 
+                  }else{
+                    div=document.getElementById("divM");
+                    div.remove();
+                  }
+                    
+              }
+            </script>
           </select><br>
+          <div id="motivo">
+          </div>
           <label for="comentario">Observaciones:</label><br>
           <textarea name="comentario" id="comentary" cols="40" rows="10">
             Pon tus Observaciones...
           </textarea><br>
 
           <label for="TyC">Acepta los terminos y condiciones:</label><input type="checkbox" name="TyC" value="true" id="terminos" required>
-          <label for=""></label>
+    
           <br>
 
-          <input type="submit" value="Enviar" id="envio">
+          <input type="submit" value="Enviar" id="envio" onclick="return confirmarDatos();">
+       
           <input type="reset" value="Reinicio" id="reset">
           </fieldset>
+
+          </script>
       </form>
       </section>
     </main>
