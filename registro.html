@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -33,4 +34,123 @@
        </div>
      </footer>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="author" content="Álvaro Almodóvar, Álvaro Fernández, Eduard Moraru">
+    <meta name="description" content="El Registro de la página web">
+    <meta name="keywords" content="html,css,js,registro,formulario">
+    <link rel="stylesheet" type="text/css" href="./css/registro.css"> 
+    <link rel="icon" type="image/x-icon" href="./img/pokemonIcono.ico" sizes="32x32">
+    <script type="text/javaScript" src="./js/reigstroJS.js"></script>
+    <title>Registro</title>
+</head>
+<body>
+    <header><a href="./index.html"><img src="./img/logo.png" alt="Logo de la página principal de pokemon" height="80px" width="78px"></a><h1>Asociación de Creadores Pokémon</h1></header>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Índice</a></li>
+        <li><a href="./pokemon.html">Pokémon</a></li>
+        <li><a href="./foro.html">Foro</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+        <li><a href="./quieneSomos.html">Quiénes somos</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <form action="mailto:admin@asociacion.org" method="post">
+          <h2>Formulario Pokemanico</h2><br><br>
+          <fieldset>
+              <legend>Información personal</legend><br>
+          <label for="name">Nombre:</label><input type="text" name="name" placeholder="Introduce tu nombre..." id="nombre" required>
+          <br>
+          <label for="surname">Apellidos:</label><input type="text" name="surname" placeholder="Introduce tu apellido..." id="apellido" required>
+          <br>
+          <label for="Alias">Nombre de usuario:</label><input type="text" name="Alias" placeholder="username" id="nombreUsuario" required><br>
+          <label for="contrasenia">Contraseña:</label>
+          <input type="password" name="contrasenia" id="password"  required placeholder="password"> <br>
+          <label for="nie">Nie:</label><input type="text" name="nie" placeholder="Introduce tu nie..." id="documento" required><br>
+          <label for="mail">Correo electrónico</label>
+          <input type="email" name="mail" id="correo" required> <br>
+          <label for="estado">Estado civil:</label>
+          <input type="radio" name="estado" id="soltero" checked>soltero
+          <input type="radio" name="estado" id="casado">casado
+          <input type="radio" name="estado" id="divorciado">divorciado <br>
+          <label for="tel">Teléfono:</label>
+          <input type="tel" name="tel" id="telefono" maxlength="9"><br>
+          <label for="disponibilidad">Disponibilidad</label> 
+          <select name="disponibilidad" id="semana">
+            <option value="lunes">Lúnes</option>
+            <option value="martes">Martes</option>
+            <option value="miercoles">Miércoles</option>
+            <option value="jueves">Jueves</option>
+            <option value="viernes">Viernes</option>
+            <option value="sabado">Sábado</option>
+            <option value="domingo">Domingo</option>
+          </select><br>
+          <label for="motivacion">Motivación:</label> 
+          <select name="motivacion" id="opcMotivacion" onchange="mostrarDiv()">
+            <option value="participar">Participar en actividades</option>
+            <option value="preparar">Preparar actividades</option>
+            <option value="acompaniar">Acompañar a un menor</option>
+            <option value="curiosidad">Curiosidad por la asociacion</option>
+            <option value="other">Otros</option>
+            <script>
+              function mostrarDiv(){
+                var opc=document.getElementById("opcMotivacion").value;
+                var tes=null;
+                var div=null;
+                if(opc=="other")
+                  {
+                     div=document.getElementById("motivo");
+                     tes=document.createElement("textarea");
+                     tes.setAttribute("placeholder","Escribe otro motivo....");
+                     tes.setAttribute("id","divM");
+                    if(div.childNodes.length<2){
+                      div.append(tes);
+                    } 
+                  }else{
+                    div=document.getElementById("divM");
+                    div.remove();
+                  }
+                    
+              }
+            </script>
+          </select><br>
+          <div id="motivo">
+          </div>
+          <label for="comentario">Observaciones:</label><br>
+          <textarea name="comentario" id="comentary" cols="50" rows="10">
+            Pon tus Observaciones...
+          </textarea><br>
+
+          <label for="TyC">Acepta los terminos y condiciones:</label><input type="checkbox" name="TyC" value="true" id="terminos" required>
+    
+          <br><br>
+          <div id="botonera">
+          <input type="submit" value="Enviar" id="envio" onclick="return confirmarDatos();">
+       
+          <input type="reset" value="Reinicio" id="reset">
+        </div>
+          </fieldset>
+
+          </script>
+      </form>
+      </section>
+    </main>
+    <div id="creditos">
+        <p>Créditos:Logo de pokemon Go</p>
+     </div>
+     <footer>
+       <div id="posicionarTexto">
+         <p>&copy; Propiedad de Álvaro Almodóvar , Eduard Moraru , Álvaro Fernández</p>
+         <p><a href="https://site.educa.madrid.org/ies.villablanca.madrid/" target="_blank">IES Villablanca</p>
+          <p><a href="mailto:alvaro.almodovar1@educa.madrid.org">Contacto</a></p>
+       </div>
+     </footer>
+</body>
+>>>>>>> 0df2dbea14810e448d66844a97623b5516537906
 </html>
