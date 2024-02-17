@@ -1,6 +1,10 @@
-*{
+ *{
     margin: 0px;
     padding: 0px;
+}
+
+body{
+    background-image: url(../img/Fondo.jpg);
 }
 
 header {
@@ -108,24 +112,18 @@ footer p a:hover{
 #creditos p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
+} 
+
+section{
+    background-color: white;
+    padding: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 3%;
+    border-radius: 6%;
 }
 
 /* formulario */
-
-form{
-  width: 400px;
-  background-color: white;
-  padding: 30px;
-  margin: auto;
-  margin-top: 100px;
-}
-
-.control{
-  margin: 10px;
-  width: 360px;
-  height: 100px;
-  padding-left: 2%;
-}
 
 input[type="submit"]{
   background-color: #3cc93f;
@@ -139,12 +137,54 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
   background-color: #37b839;
-}
+  cursor: pointer;
+} 
 
-label{
-  padding: 10px;
-}
+  .u-wrapper {
+    max-inline-size: 1232px;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
 
-.alinear{
-  text-align: center;
+  .tag span {
+    padding: .5em;
+    box-shadow: -4px 4px 0 rgb(35, 175, 22);
+    background-color:darkturquoise;
+  }
+
+  .form {
+    max-inline-size: 550px;
+    margin: auto;
+  }
+  
+  .form label {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: .5em;
+    padding-inline-start: .5em;
+  }
+  
+  .form label span {
+    color: #DA1414;
+  }
+  
+  .form input, .form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: .8em;
+    border-radius: .5em;
+    border: 1px solid #858C94;
+  }
+  .form textarea {
+    margin-block-end: 2em;
+    font-family: inherit;
+  }
+  
+  #trucazo {
+    opacity: 0;
+  }
+.form .tag span {
+    display: block;
+    text-align: center;
 }
