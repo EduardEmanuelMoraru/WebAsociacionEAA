@@ -188,3 +188,25 @@ input[type="submit"]:hover{
     display: block;
     text-align: center;
 }
+
+.contactacion{
+  background-color: white;
+  float: left;
+  padding: .6%;
+  border-radius: 32%;
+}
+
+.contactacion a{
+  text-decoration: none;
+}
+
+.ceos{
+  float: right;
+  background-color: white;
+  padding: .6%;
+  border-radius: 32%;
+}
+
+.ceos a{
+  text-decoration: none;
+}
