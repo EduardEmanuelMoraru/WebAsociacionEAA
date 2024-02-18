@@ -38,9 +38,8 @@
             <input name="email" type="text" id="email" required placeholder="juan@gmail.com">
             <label for="message">Mensaje</label>
             <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
-            <input type="submit" class="btn-green" value="Enviar Datos">
+            <a href="mailto:eduard.emanuel04@gmail.com"><input type="submit" class="btn-green" value="Enviar Datos"></a>
           </form>
-          <a href="mailto:eduard.emanuel04@gmail.com" id="trucazo"></a>
         </div>
       </div>
     </section>
@@ -48,14 +47,16 @@
     <div id="creditos">
         <p>Créditos:Logo de pokemon Go</p>
     </div>
-     
+    <script>
+      var div=document.getElementById("login");
+      div.style.visibility="hidden";
+    </script>
     <footer>
-       
         <div id="posicionarTexto">
-         <p>&copy; Propiedad de Álvaro Almodóvar , Eduard Moraru , Álvaro Fernández</p>
-         <p><a href="https://site.educa.madrid.org/ies.villablanca.madrid/" target="_blank">IES Villablanca</p>
+          <p>&copy; Propiedad de Álvaro Almodóvar , Eduard Moraru , Álvaro Fernández</p>
+          <p><a href="https://site.educa.madrid.org/ies.villablanca.madrid/" target="_blank">IES Villablanca</p>
           <p><a href="mailto:alvaro.almodovar1@educa.madrid.org">Contacto</a></p>
-       </div>
+        </div>
      
     </footer>
 
