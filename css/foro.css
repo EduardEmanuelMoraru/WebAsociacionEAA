@@ -1,17 +1,21 @@
 *{
     margin: 0px;
     padding: 0px;
-    
 }
+
 body{
     background-image: url(../img/Fondo.jpg);
+<<<<<<< HEAD:css/quieneSomos.css
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+=======
+>>>>>>> origin/ramaDeEdu:css/foro.css
 }
+
 header {
     display:block;
     background-color:rgba(20, 89, 192, 0.973);
     width: 100%;
-    height:9vh;
+    height:80px;
     
 }
 header h1{
@@ -19,8 +23,8 @@ header h1{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: relative;
-    left: 2vw;
-    bottom: 3.2vh;
+    left: 40px;
+    bottom: 32px;
 }
 
 header img{
@@ -30,8 +34,17 @@ header img{
 nav{
     display:inline-block;
     position: relative;
-    left:57vw;
-    bottom: 6.5vh;
+    left:1098px;
+    bottom: 58px;
+}
+
+#botoneraRegistro{
+    display: grid;
+    grid-template-columns: repeat(2,50px);
+    gap: 5px;
+    position: absolute;
+    left:712px;
+    bottom: 30px; 
 }
 
 nav li:hover{
@@ -54,52 +67,18 @@ nav li a{
 nav a{
    font-weight: bold;
 }
-nav a:hover{
-    font-weight: bold;
-    font-family:Georgia, 'Times New Roman', Times, serif;
- }
 nav ul{
     display: grid;
     grid-template-columns: repeat(4,150px);
     gap: 8px;
 }
-#login{  
-    display: inline-block;
-    text-align: center;
-    position: relative;
-    left: 74.7vw;
-    bottom: 83.9vh;
-    width: 10vw;
-    height:14vh;
-    border: 2px solid black;
-    background-color: slategray;
-    border-radius: 8px;
-}
-
-#botoneraRegistro{
-    display: grid;
-    grid-template-columns: repeat(2,50px);
-    gap: 14px;
-    position: absolute;
-    left:35vw;
-    bottom: 2.4vh; 
-    
-}
-#botoneraRegistro input[type="button"]{
-    width: 3.3vw;
-}
-main {
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-    margin: 5vh 0vh;
-    
-}
-
 footer{
     background-color: lightslategrey;
-    width: 100% ;
-    height: 9vh;
-    
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 footer p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -127,27 +106,28 @@ footer p a:hover{
     position: relative;
     top:6px;
 }
-
-#login{
+#creditos{
     display: inline-block;
-    text-align: center;
     position: absolute;
-    left: 88.7vw;
-    bottom:77vh;
-    width: 10vw;
-    height:14vh;
-    border: 2px solid black;
-    background-color: slategray;
-    border-radius: 8px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+#creditos p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
 
-#botonSubir{
-    bottom: 20px;
-    right: 20px;
-    position: fixed;
-    cursor: pointer;
+.slider{
+    aspect-ratio: 10 / 16;
+    width: 300px;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
 }
 
+<<<<<<< HEAD:css/quieneSomos.css
 h1{
     text-align: center;
     padding: 10px;
@@ -216,4 +196,13 @@ h1{
     height: 240px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+=======
+.slider img{
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;
+>>>>>>> origin/ramaDeEdu:css/foro.css
 }

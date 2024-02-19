@@ -1,4 +1,3 @@
-//mostrar Y ocultar el div del login
 function rellenarDatos(){
     var elemento =document.getElementById("login");
     if(elemento.style.visibility=="hidden"){
@@ -6,6 +5,7 @@ function rellenarDatos(){
     }else{
         elemento.style.visibility="hidden";
     }
+<<<<<<< HEAD:js/quieneSomos.js
 }
 
 function irInicio() {
@@ -27,3 +27,6 @@ function mostrarInformacion(id) {
     // Muestra la información correspondiente
     informacion.style.display = 'block';
 }
+=======
+  }
+>>>>>>> origin/ramaDeEdu:js/foro.js

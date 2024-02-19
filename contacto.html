@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Álvaro Almodóvar, Álvaro Fernández, Eduard Moraru">
+    <meta name="description" content="El índice principal de la página web">
+    <meta name="keywords" content="html,css,js,índice,principal">
+    <link rel="stylesheet" type="text/css" href="./css/contacto.css">
+    <script type="text/javaScript" src="./js/contacto.js"></script>
+    <link rel="icon" type="image/x-icon" href="./img/pokemonIcono.ico" sizes="32x32">
+    <title>Contacto</title>
+</head>
+<body>
+
+    <header><a href="./index.html"><img src="./img/logo.png" alt="Logo de la página principal de pokemon" height="80px" width="78px"></a><h1>Asociación de Creadores Pokémon</h1></header>
+    
+    <nav>
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./listaPokemon.html">Pokémon</a></li>
+        <li><a href="./foro.html">Foro</a></li>
+        <li><a href="./quieneSomos.html">Quiénes somos</a></li>
+      </ul>
+      <div id="botoneraRegistro">
+        <input type="button"  onclick="rellenarDatos();" value="Acceso" id="access" name="botonAcceso" >
+        <a href="./registro.html"><input type="button" value="Registro" id="register" name="botonRegistro"></a>
+      </div>
+    </nav>
+
+    <section class="contact">
+      <div class="u-wrapper">
+        <div>
+          <form id="form" action="" method="post" class="form">
+            <h3 class="tag"><span>CONTACTANOS</span></h3>
+            <label for="name">Nombre Completo <span>*</span></label>
+            <input name="name" required type="text" id="name" placeholder="Juan">
+            <label for="email">Correo electrónico <span>*</span></label>
+            <input name="email" type="text" id="email" required placeholder="juan@gmail.com">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+            <a href="mailto:eduard.emanuel04@gmail.com"><input type="submit" class="btn-green" value="Enviar Datos"></a>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <aside class="contactacion">
+      <p>Rellene el formulario o escribanos al siguiente correo:</p>
+      <a href="mailto:asociacionPoke@gmail.com"><p>asociacionPoke@gmail.com</p></a>
+      <p>O visite nuestra tienda situada en:</p>
+      <a href="https://maps.app.goo.gl/3PmA5cha6agq2W198"><p>Calle Villablanca, 79</p></a>
+    </aside>
+
+    <aside class="ceos">
+      <p>Los creadores de esta página web son:</p>
+      <p>Álvaro Almodóvar, Álvaro Fernández y Eduard Moraru.</p>
+      <p>Visite el apartado <a href="./quienesSomos">quienes somos</a> para más información.</p>
+      <p>Gracias.</p>
+    </aside>
+    
+    <div id="creditos">
+        <p>Créditos:Logo de pokemon Go</p>
+    </div>
+    <script>
+      var div=document.getElementById("login");
+      div.style.visibility="hidden";
+    </script>
+    <footer>
+        <div id="posicionarTexto">
+          <p>&copy; Propiedad de Álvaro Almodóvar , Eduard Moraru , Álvaro Fernández</p>
+          <p><a href="https://site.educa.madrid.org/ies.villablanca.madrid/" target="_blank">IES Villablanca</p>
+          <p><a href="mailto:alvaro.almodovar1@educa.madrid.org">Contacto</a></p>
+        </div>
+     
+    </footer>
+
+</body>
+</html>
