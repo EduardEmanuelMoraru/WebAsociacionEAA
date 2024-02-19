@@ -5,7 +5,7 @@
 }
 body{
     background-image: url(../img/Fondo.jpg);
-    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 header {
     display:block;
@@ -148,6 +148,11 @@ footer p a:hover{
     cursor: pointer;
 }
 
+h1{
+    text-align: center;
+    padding: 10px;
+}
+
 #centrado{
     grid-column: 2;
     background-color: white;
@@ -165,4 +170,50 @@ footer p a:hover{
 #centrado li{
    padding: 3px;
     width: 100%;
+}
+
+#equipo{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+}
+ #centrado p{
+    margin: 10px;
+ }
+
+ #centrado h2{
+    background-color:rgba(20, 89, 192, 0.973);
+    color:rgb(35, 197, 202);
+    border-radius: 3px;
+    margin: 5px;
+    padding-top: 5px;
+ }
+
+ .contenedorImagen{
+    position: relative;
+    margin: 10px;
+ }
+
+ .informacion {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.contenedorImagen:hover .informacion {
+    opacity: 1;
+}
+
+#centrado img{
+    width: 240px;
+    height: 240px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }

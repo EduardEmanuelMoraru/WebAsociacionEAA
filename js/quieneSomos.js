@@ -14,3 +14,16 @@ function irInicio() {
         behavior: 'smooth'
     });
 }
+
+function mostrarInformacion(id) {
+    var informacion = document.getElementById('info' + id.substr(-1));
+
+    // Oculta todas las informaciones
+    var todasLasInformaciones = document.querySelectorAll('.informacion');
+    todasLasInformaciones.forEach(function(info) {
+        info.style.display = 'none';
+    });
+
+    // Muestra la información correspondiente
+    informacion.style.display = 'block';
+}
